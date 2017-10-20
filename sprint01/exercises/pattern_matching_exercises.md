@@ -1,11 +1,6 @@
 # Exercises
 
-If you have any questions in this exercises: you can consult these links:
-
-+ [Elixir Docs - Pattern Matching](https://elixir-lang.org/getting-started/pattern-matching.html)
-+ [Elixir Docs - If/Case](https://elixir-lang.org/getting-started/case-cond-and-if.html#doend-blocks)
-
-01. So we going to learn Ladeira's "casamento de padrão". First 
+01. So we going to learn Ladeira's "casamento de padrão". First
 of all, we have been lying all this time. What the name of the operator below:
 
 Tip: It's not an assigment operator!
@@ -14,7 +9,7 @@ Tip: It's not an assigment operator!
 iex> x = 1
 ```
 
-02. Pattern matching works on both sides? In other words, Can I match a variable 
+02. Pattern matching works on both sides? In other words, Can I match a variable
 on the left side?
 
 ```elixir
@@ -23,7 +18,7 @@ iex> 1 = x
 ```
 
 03. Go to internet, talk to your team, find in some fucking place an example of
-a simple pattern matching using more than 2 variables. Use 'iex' to test your 
+a simple pattern matching using more than 2 variables. Use 'iex' to test your
 example.
 
 ```

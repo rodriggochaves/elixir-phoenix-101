@@ -98,3 +98,6 @@ iex> put_elem(tuple, 1, "world")
 iex> tuple
 {:ok, "hello"}
 ```
+
+## Resources
+- [Elixir Docs - Basic types](https://elixir-lang.org/getting-started/basic-types.html)
