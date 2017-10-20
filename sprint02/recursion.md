@@ -2,20 +2,20 @@
 
 Recursion BOOOOOOOOOOOOY!
 
-I'm pretty sure you know very well what's recursion is. If not, make sure everyone 
+I'm pretty sure you know very well what's recursion is. If not, make sure everyone
 knows.
 
-01. Look to the code below. Transform it in a recursion function:
+01. Look at the code below. Transform it in a recursive function:
 
-```elixir
+```
 for(i = 0; i < sizeof(array); i++) {
   array[i] = array[i] * 2;
 }
 ```
 
-Observation: remenber a function can have many headers with different parameters.
+Observation: remember a function can have multiple clauses with different parameters.
 
-02. Refactor the code you done in question `01` usign guard in functions.
+02. Refactor the code you did in question `01` using guarded clauses.
 
 If you forget what is a guard, look the example below:
 
@@ -23,7 +23,7 @@ If you forget what is a guard, look the example below:
 def print_multiple_times(msg, n) when n <= 1 do
 ```
 
-So, recursion have some powerfull utility. Look the code below:
+So, recursion has some powerful utility. Look the code below:
 
 ```elixir
 defmodule Math do
@@ -37,14 +37,14 @@ defmodule Math do
 end
 ```
 
-03. Show me what this function got. What I mean? Given the initial parameters,
+03. Show me what this function got. What do i mean? Given the initial parameters,
 [1,2,3,4,5] and 7, show all iterations functions call!
 
-But this don't represent the real world. What I mean? Functions like above are
-very commom so Elixir created a module to handle this, called `Enum`.
+But this doesn't represent the real world. What do i mean? Functions like above are
+very common so Elixir created a module to handle this, called `Enum`.
 
-04. You're ruby developers, so the two next snippets should be not strange to 
-you guys. Explain what are been done in which one of them:
+04. You're (mostly) ruby developers, so the next two snippets should not be strange to
+you guys. Explain what each one of them does:
 
 (a)
 
@@ -60,9 +60,9 @@ iex> Enum.map([1, 2, 3], fn(x) -> x * 2 end)
 [2, 4, 6]
 ```
 
-05. What's the name of the structure `fn(x) -> x * 2 end`. 
+05. What's the name of the structure `fn(x) -> x * 2 end`.
 
-Tip: Javascript also defines
+Tip: Javascript also defines it
 with the same name.
 
 06. Use `Enum.reduce` to calculate sum of the list `[1,2,3,4]` starting with 7.

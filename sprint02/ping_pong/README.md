@@ -1,6 +1,6 @@
 # PingPong
 
-In this exercise we need to implement a receive loop. the receive will need to pattern match a tuple containing {:ping, sender_pid} or {:pong, sender_pid} and send the opposite to the sender. run `mix test` to check if your implementation is correct.
+In this exercise we need to implement a receive loop for the module Ping(lib/ping.ex). the receive will need to pattern match a tuple containing {:ping, sender_pid} or {:pong, sender_pid} and send the opposite to the sender. run `mix test` to check if your implementation is correct.
 
 ## Installation
 
