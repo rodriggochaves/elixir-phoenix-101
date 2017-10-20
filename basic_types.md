@@ -1,4 +1,5 @@
 # Basic Types
+
 ```elixir
 1          # integer
 0x1F       # integer
@@ -97,6 +98,3 @@ iex> put_elem(tuple, 1, "world")
 iex> tuple
 {:ok, "hello"}
 ```
-
-# Lists and tuples diff
-- to do
