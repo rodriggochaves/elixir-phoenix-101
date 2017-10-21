@@ -2,7 +2,7 @@
 
 In this exercise you guys will take off the training wheels. Use `mix` to create your own project. Create a module according to the following specification:
 
-- Make a start function that spawns the thread.
+- Make a start function that spawns the process.
 - When sending a message in the format `{from, {:sentence, array_of_strings}}` return to `from` a message `{:ok, sentence}`.
   - the input will be `array_of_strings` which is an array of strings...
   - It will return `sentence` which is all the strings from the array concatenated with `,` as a separator and ending in a `.`(dot). The last two strings will be separated by an `e`. example:
