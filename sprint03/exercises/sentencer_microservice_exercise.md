@@ -12,10 +12,15 @@ In this exercise you guys will take off the training wheels. Use `mix` to create
   ```
 - There must be a test suit containing these 4 tests
   - Starting the service.
-    - Test that the start returns the tuple `{:ok, sentencer_pid}` and that sentencer_pid is of the type pid.(tip: there is a function `is_pid/1`)
+    - Test that the start returns the tuple `{:ok, sentencer_pid}` and that sentencer_pid is of the type pid.
   - sending an array of size 1.
     - Test that it only puts a dot at the end  `["Tuts"] -> "Tuts."`.
   - Sending an array to be sentenced.
     - Test that your service works as stated for an array of size greater than 1.
   - Sending an empty array.
     - Test it returns `""` as a sentence.
+
+Tips:
+- Use a structure similar to ping_pong(start, loop with receive)
+- There is a function `is_pid/1`
+- `assert_receive/1` will be needed
