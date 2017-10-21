@@ -6,7 +6,19 @@ defmodule PingPongTest do
 		ping = spawn(Ping, :start, [])
 		send(ping, {:pong, self()})
 		assert_receive {:ping, ^ping}
-    send(ping, {:pong, self()})
-    assert_receive {:ping, ^ping}
 	end
+
+  test "it responds to a ping with a pong" do
+		ping = spawn(Ping, :start, [])
+		send(ping, {:ping, self()})
+		assert_receive {:pong, ^ping}
+	end
+
+  test "it responds multiple times" do
+    ping = spawn(Ping, :start, [])
+		send(ping, {:pong, self()})
+		assert_receive {:ping, ^ping}
+		send(ping, {:ping, self()})
+		assert_receive {:pong, ^ping}
+  end
 end

@@ -4,6 +4,6 @@ defmodule Ping do
 	end
 
   def loop do
-    # code
+    # receive
   end
 end
