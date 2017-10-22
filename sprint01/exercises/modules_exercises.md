@@ -1,7 +1,7 @@
 # Exercises
 
 Elixir isn't object oriented. So, we don't have classes. In this exercises,
-we going to make the architure of a simple project thinking only in modules.
+we going to make the architecture of a simple project thinking only in modules.
 
 So, look as these functions:
 
@@ -12,13 +12,13 @@ def park car
 def goto place
 def close
 def open
-def alarm_security
+def sound_security_alarm
 def pay_taxes
-def calculate_exchange
+def calculate_exchange item, payment
 def find_empty_parking_lot
 ```
 
-01. Find way to divide this problem in 4 modules. List the name below:
+01. Find way to divide this problem in 4 modules. List the modules and its functions(stating if they are private) below:
 
 ```
 1. ...
