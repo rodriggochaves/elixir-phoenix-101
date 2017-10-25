@@ -27,7 +27,7 @@ $ elixir assertion_test.exs
 
 ```elixir
 def sum_list list, start_value
-  Enum.reduce(list, start_value, fn(x) -> start_value += list end)
+  Enum.reduce(list, start_value, fn( x, acc ) -> acc + x end)
 end
 ```
 
