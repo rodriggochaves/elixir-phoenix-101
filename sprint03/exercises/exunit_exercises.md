@@ -48,11 +48,11 @@ end
 ```
 
 03. This exercises is special. What we, as developers are looking for when
-we create code to test our own code? Answer this before keep going?
-So, looking at this point of view, I'll give a piece of code and you'll 
-create a few testes on top of this and evaluate it. What do you think about it?
+we create code to test our own code? Answer this before keep going.
+So, looking at this point from view, I'll give a piece of code and you'll 
+create a few tests on top of it and evaluate it. What do you think about it?
 
-So, let's describe the problem. Suppose you're a Biologist and need a program
+So, let's describe the problem: suppose you're a Biologist and need a program
 to count nucleotids in a DNA sequence. Pretty simple, right?
 
 ```elixir
@@ -62,7 +62,6 @@ end
 
 def count(dna, exp) do
   case dna do
-    [ head | tail ] -> count(tail, exp)
     '' -> 0
   end
 end
